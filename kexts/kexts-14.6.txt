@@ -1,0 +1,18 @@
+EFI/CLOVER/kexts/Other
+- FakeSMC.kext
+
+
+/Library/Extensions
+- ACPIBatteryManager.kext
+- ACPIDebug.kext
+- AirportBrcmFixup.kext
+- AppleALC.kext
+- ApplePS2SmartTouchPad.kext
+- AsusNBFnKeys.kext
+- BrcmFirmwareRepo.kext
+- BrcmPatchRAM2.kext
+- FakeSMC.kext
+- Lilu.kext
+- USBPorts.kext
+- VoodooPS2Controller.kext
+- WhateverGreen.kext

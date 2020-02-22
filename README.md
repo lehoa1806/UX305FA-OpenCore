@@ -59,16 +59,16 @@ help to avoid a lot of frozen boots (my experiences)
 All kexts were moved to EFI/CLOVER/kexts/Other due to the read-only issue on
 Catalina
 ###  EFI/CLOVER/kexts/Other
-AirportBrcmFixup.kext <- wifi
-AppleALC.kext <- audio
-BrcmBluetoothInjector.kext <- bluetooth
-BrcmFirmwareData.kext <- bluetooth
-BrcmPatchRAM3.kext <- bluetooth
-SMCBatteryManager.kext <- battery indicator
-VoodooPS2Controller.kext <- keyboard and touchpad
-Lilu.kext
-VirtualSMC.kext
-WhateverGreen.kext
+* AirportBrcmFixup.kext <- wifi
+* AppleALC.kext <- audio
+* BrcmBluetoothInjector.kext <- bluetooth
+* BrcmFirmwareData.kext <- bluetooth
+* BrcmPatchRAM3.kext <- bluetooth
+* SMCBatteryManager.kext <- battery indicator
+* VoodooPS2Controller.kext <- keyboard and touchpad
+* Lilu.kext
+* VirtualSMC.kext
+* WhateverGreen.kext
 
 ## Compile kexts
 

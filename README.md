@@ -10,24 +10,17 @@ Clover EFI bootloader ASUS UX305FA
 * BIOS version 213
 
 ##  Overview
-* I am a fan of Linux and I have used Ubuntu, CentOS and openSUSE for around 14
-years. Everything is OK before Wireless Headphones era comes. I have three
-wireless audio devices and I have been using them all day, every day. That was
-why random drops while connecting to Linux were killing me these time. So I
-decided to switch to another environment after trying many other flavors of
-Linux e.g. Kubuntu and Fedora. And it is definitely the Hackintosh, since I
-tried it several times before and it is similar to Linux environment. The most
-important thing, NO MORE DROP.
-* I have used Mojave for almost a year, for both personal use and work related
-(I am a Full Stack Developer). And now is the time to upgrade to Catalina.
-This is not a public guide to help people to install Hackintosh to their
-devices. It is rather a note for me to reinstall my Hackintosh just in case I
-cannot upgrade my laptop to Catalina or it is not suitable for me. So, as
-people said, I take my own risk and you should too.
+Updated to Calatina
 
-###  What works: (necessity order)
+Removed these following configurations since I don't use them at all.
+The old configurations still work on Catalina.
+* Ambient light sensing
 * Keyboard: Function keys - Brightness, audio volumes 
 * Touchpad: a bit weird somehow - Triple fingers for right click
+
+###  What works: (necessity order)
+* Keyboard
+* Touchpad
 * Video: Intel HD 5300
 * USB
 * Stock USB to Ethernet adapter
@@ -35,7 +28,6 @@ people said, I take my own risk and you should too.
 * Audio: microphone, internal audio and HDMI audio
 * Internal webcam
 * Battery: Status and native power management
-* Ambient light sensing (Fn + A doesn't work)
 * Card reader
 * Sleep
 
@@ -57,11 +49,6 @@ people said, I take my own risk and you should too.
 * Security/Secure Boot Control: Disabled
 
 ##  Clover EFI bootloader
-###  config.plist:
-* We all know where we can get it
-
-###  EFI/CLOVER/ACPI/patched:
-* We all know where we can get it
 
 ###  EFI/CLOVER/drivers/UEFI: 
 * HFSPlus.efi - useful in installing phase
@@ -69,26 +56,88 @@ people said, I take my own risk and you should too.
 help to avoid a lot of frozen boots (my experiences)
 
 ##  Kexts:
+All kexts were moved to EFI/CLOVER/kexts/Other due to the read-only issue on
+Catalina
 ###  EFI/CLOVER/kexts/Other
-* FakeSMC.kext - necessary for upgrading
+AirportBrcmFixup.kext <- wifi
+AppleALC.kext <- audio
+BrcmBluetoothInjector.kext <- bluetooth
+BrcmFirmwareData.kext <- bluetooth
+BrcmPatchRAM3.kext <- bluetooth
+SMCBatteryManager.kext <- battery indicator
+VoodooPS2Controller.kext <- keyboard and touchpad
+Lilu.kext
+VirtualSMC.kext
+WhateverGreen.kext
 
-###  /Library/Extensions
-* ACPIBatteryManager.kext
-* ACPIDebug.kext
-* AirportBrcmFixup.kext
-* AppleALC.kext
-* ApplePS2SmartTouchPad.kext
-* AsusNBFnKeys.kext
-* BrcmFirmwareRepo.kext
-* BrcmPatchRAM2.kext
-* FakeSMC.kext
-* Lilu.kext
-* USBPorts.kext
-* VoodooPS2Controller.kext
-* WhateverGreen.kext
+## Compile kexts
+
+Prepare xcode
+```
+sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
+```
+
+```
+# Unzip kexts in /kexts
+mkdir -p ~/workspace/HACKINTOSH/UX305FA/build/kexts
+cd ~/workspace/HACKINTOSH/UX305FA/build/kexts
+mkdir DEBUG
+mkdir RELEASE
+
+# Build DEBUG ========================================================
+# Lilu
+cd ~/workspace/HACKINTOSH/UX305FA/build
+git clone https://github.com/acidanthera/Lilu.git && cd Lilu
+xcodebuild -configuration Debug
+cp -R build/Debug/Lilu.kext ./../kexts/DEBUG/
+
+# AppleALC
+cd ~/workspace/HACKINTOSH/UX305FA/build
+git clone https://github.com/acidanthera/AppleALC.git && cd AppleALC
+cp -R ../Lilu/build/Debug/Lilu.kext .
+xcodebuild -configuration Debug
+cp -R build/Debug/AppleALC.kext ./../kexts/DEBUG/
+
+# VirtualSMC
+cd ~/workspace/HACKINTOSH/UX305FA/build
+git clone https://github.com/acidanthera/VirtualSMC.git && cd VirtualSMC
+cp -R ../Lilu/build/Debug/Lilu.kext .
+xcodebuild -configuration Debug
+cp -R build/Debug/VirtualSMC.kext ./../kexts/DEBUG/
+cp -R build/Debug/SMCBatteryManager.kext ./../kexts/DEBUG/
+
+# WhateverGreen
+cd ~/workspace/HACKINTOSH/UX305FA/build
+git clone https://github.com/acidanthera/WhateverGreen.git && cd WhateverGreen
+cp -R ../Lilu/build/Debug/Lilu.kext .
+xcodebuild -configuration Debug
+cp -R build/Debug/WhateverGreen.kext ./../kexts/DEBUG/
+
+# Build RELEASE ========================================================
+# Lilu
+cd ~/workspace/HACKINTOSH/UX305FA/build/Lilu
+xcodebuild
+cp -R build/Release/Lilu.kext ./../kexts/RELEASE/
+
+# AppleALC
+cd ~/workspace/HACKINTOSH/UX305FA/build/AppleALC
+xcodebuild
+cp -R build/Release/AppleALC.kext ./../kexts/RELEASE/
+
+# VirtualSMC
+cd ~/workspace/HACKINTOSH/UX305FA/build/VirtualSMC
+xcodebuild
+cp -R build/Release/VirtualSMC.kext ./../kexts/RELEASE/
+cp -R build/Debug/SMCBatteryManager.kext ./../kexts/DEBUG/
+
+# WhateverGreen
+cd ~/workspace/HACKINTOSH/UX305FA/build/WhateverGreen
+xcodebuild
+cp -R build/Release/WhateverGreen.kext ./../kexts/RELEASE/
+```
 <p align="center">
-  <img src="https://raw.githubusercontent.com/lehoa1806/UX305FA-CLOVER/master/images/overview-14.6.png">
+  <img src="https://raw.githubusercontent.com/lehoa1806/UX305FA-CLOVER/master/images/overview-15.3.6.png">
 </p>
 <p align="center">
-  <img src="https://raw.githubusercontent.com/lehoa1806/UX305FA-CLOVER/master/images/geekbench.5.0.2-14.6.png">
+  <img src="https://raw.githubusercontent.com/lehoa1806/UX305FA-CLOVER/master/images/geekbench-15.3.png">
 </p>

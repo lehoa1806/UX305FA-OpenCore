@@ -39,13 +39,9 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>
-					X0RTTQ==
-					</data>
+					<data>X0RTTQ==</data>
 					<key>Replace</key>
-					<data>
-					WERTTQ==
-					</data>
+					<data>WERTTQ==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -53,13 +49,9 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>
-					R0ZYMA==
-					</data>
+					<data>R0ZYMA==</data>
 					<key>Replace</key>
-					<data>
-					SUdQVQ==
-					</data>
+					<data>SUdQVQ==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -67,167 +59,19 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>
-					QjBEMw==
-					</data>
+					<data>QjBEMw==</data>
 					<key>Replace</key>
-					<data>
-					SERBVQ==
-					</data>
+					<data>SERBVQ==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>Rename Method(_Q0E,0) to Method(XQ0E,0)</string>
+					<string>change EC0 to EC</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>
-					X1EwRQA=
-					</data>
+					<data>RUMwXw==</data>
 					<key>Replace</key>
-					<data>
-					WFEwRQA=
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Rename Method(_Q0F,0) to Method(XQ0F,0)</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					X1EwRgA=
-					</data>
-					<key>Replace</key>
-					<data>
-					WFEwRgA=
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Rename Method(_QCD,0) to XQCD</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					X1FDRAA=
-					</data>
-					<key>Replace</key>
-					<data>
-					WFFDRAA=
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Rename Method(GPRW,2) to Method(XPRW,2)</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					R1BSVwI=
-					</data>
-					<key>Replace</key>
-					<data>
-					WFBSVwI=
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Battery: Rename Method(_BIX,0) to Method(XBIX,0)</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					X0JJWAA=
-					</data>
-					<key>Replace</key>
-					<data>
-					WEJJWAA=
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Battery: Rename Method(TACH,1, Serialized) to Method(XTAC,1,Serialized)</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					VEFDSAk=
-					</data>
-					<key>Replace</key>
-					<data>
-					WFRBQwk=
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Battery: Rename Method(BIFA,0) to Method(XBIF,0)</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					QklGQQA=
-					</data>
-					<key>Replace</key>
-					<data>
-					WEJJRgA=
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Battery: Rename Method(SMBR,3,Serialized) to Method(XSMB,3,Serialized)</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					U01CUgs=
-					</data>
-					<key>Replace</key>
-					<data>
-					WFNNQgs=
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Battery: Rename Method(SMBW,5,Serialized) to Method(XSMW,5,Serialized)</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					U01CVw0=
-					</data>
-					<key>Replace</key>
-					<data>
-					WFNNVw0=
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Battery: Rename Method(ECSB,7) to Method(XCSB,7)</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					RUNTQgc=
-					</data>
-					<key>Replace</key>
-					<data>
-					WENTQgc=
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Battery: Rename Method(FBST,4) to Method(XBST,4)</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					RkJTVAQ=
-					</data>
-					<key>Replace</key>
-					<data>
-					WEJTVAQ=
-					</data>
+					<data>RUNfXw==</data>
 				</dict>
 			</array>
 		</dict>
@@ -256,25 +100,11 @@
 			<key>PluginType</key>
 			<integer>1</integer>
 		</dict>
-		<key>SortedOrder</key>
-		<array>
-			<string>SSDT-HACK.aml</string>
-			<string>SSDT-DEBUG.aml</string>
-			<string>SSDT-ALS0.aml</string>
-			<string>SSDT-ALS.aml</string>
-			<string>SSDT-BATT.aml</string>
-			<string>SSDT-PNLF.aml</string>
-			<string>SSDT-EC.aml</string>
-			<string>SSDT-UIAC.aml</string>
-			<string>SSDT-XCPM.aml</string>
-		</array>
-		<key>SortedOrder-Comment</key>
-		<string>This is the original order supported by Clover prior to build v3062.  You can trim it as necessary.</string>
 	</dict>
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>dart=0 kext-dev-mode=1 -v</string>
+		<string>dart=0 -v debug=0x100 keepsyms=1</string>
 		<key>DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>Legacy</key>
@@ -286,7 +116,7 @@
 		<key>Secure</key>
 		<false/>
 		<key>Timeout</key>
-		<integer>2</integer>
+		<integer>5</integer>
 		<key>XMPDetection</key>
 		<string>Yes</string>
 	</dict>
@@ -304,38 +134,34 @@
 		<key>Audio</key>
 		<dict>
 			<key>Inject</key>
-			<integer>0</integer>
+			<integer>28</integer>
 		</dict>
 		<key>Properties</key>
 		<dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
 				<key>AAPL,GfxYTile</key>
-				<data>
-				AQAAAA==
-				</data>
+				<data>AQAAAA==</data>
 				<key>AAPL,ig-platform-id</key>
-				<data>
-				AAAeFg==
-				</data>
+				<data>AAAeFg==</data>
 				<key>AAPL,slot-name</key>
 				<string>Internal@0,2,0</string>
-				<key>device-id</key>
-				<data>
-				HhYAAA==
-				</data>
 				<key>device_type</key>
 				<string>VGA compatible controller</string>
-				<key>enable-hdmi20</key>
-				<data>
-				AQAAAA==
-				</data>
+				<key>framebuffer-con0-enable</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-con0-pipe</key>
+				<data>EgAAAA==</data>
+				<key>framebuffer-con1-enable</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-con1-pipe</key>
+				<data>EgAAAA==</data>
+				<key>framebuffer-con2-enable</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-con2-pipe</key>
+				<data>EgAAAA==</data>
 				<key>framebuffer-patch-enable</key>
-				<data>
-				AQAAAA==
-				</data>
-				<key>hda-gfx</key>
-				<string>onboard-1</string>
+				<data>AQAAAA==</data>
 				<key>model</key>
 				<string>Intel HD Graphics 5300</string>
 			</dict>
@@ -355,6 +181,8 @@
 		<key>Hide</key>
 		<array>
 			<string>\EFI\BOOT\BOOTx64.EFI</string>
+			<string>Preboot</string>
+			<string>Recovery</string>
 		</array>
 		<key>KbdPrevLang</key>
 		<false/>
@@ -388,9 +216,7 @@
 			<key>Inject</key>
 			<false/>
 			<key>VendorID</key>
-			<data>
-			FxE=
-			</data>
+			<data>FxE=</data>
 		</dict>
 		<key>Inject</key>
 		<dict>
@@ -422,39 +248,17 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>change F%uT%04x to F%uTxxxx in AppleBacklightInjector.kext (credit RehabMan)</string>
-				<key>Disabled</key>
-				<true/>
-				<key>Find</key>
-				<data>
-				RiV1VCUwNHgA
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>Name</key>
-				<string>com.apple.driver.AppleBacklight</string>
-				<key>Replace</key>
-				<data>
-				RiV1VHh4eHgA
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>Enable TRIM for SSD</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				AEFQUExFIFNTRAA=
-				</data>
+				<data>AEFQUExFIFNTRAA=</data>
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>Name</key>
 				<string>com.apple.iokit.IOAHCIBlockStorage</string>
 				<key>Replace</key>
-				<data>
-				AAAAAAAAAAAAAAA=
-				</data>
+				<data>AAAAAAAAAAAAAAA=</data>
 			</dict>
 		</array>
 	</dict>

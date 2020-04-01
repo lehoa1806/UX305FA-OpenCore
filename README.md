@@ -136,8 +136,8 @@ xcodebuild
 cp -R build/Release/WhateverGreen.kext ./../kexts/RELEASE/
 ```
 <p align="center">
-  <img src="https://raw.githubusercontent.com/lehoa1806/UX305FA-CLOVER/master/images/overview-15.3.6.png">
+  <img src="https://raw.githubusercontent.com/lehoa1806/UX305FA-CLOVER/master/images/Catalina_info.png">
 </p>
 <p align="center">
-  <img src="https://raw.githubusercontent.com/lehoa1806/UX305FA-CLOVER/master/images/geekbench-15.3.png">
+  <img src="https://raw.githubusercontent.com/lehoa1806/UX305FA-CLOVER/master/images/Catalina_geekbench5.png">
 </p>

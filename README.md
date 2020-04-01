@@ -1,5 +1,6 @@
 # UX305FA-CLOVER
 Clover EFI bootloader ASUS UX305FA
+Calatina 10.15.4 (19E266)
 
 ##  Hardware
 * ASUS ZenBook UX305FA
@@ -10,13 +11,12 @@ Clover EFI bootloader ASUS UX305FA
 * BIOS version 213
 
 ##  Overview
-Updated to Calatina
+Updated to Calatina 10.15.4 (19E266)
 
 Removed these following configurations since I don't use them at all.
 The old configurations still work on Catalina.
 * Ambient light sensing
 * Keyboard: Function keys - Brightness, audio volumes 
-* Touchpad: a bit weird somehow - Triple fingers for right click
 
 ###  What works: (necessity order)
 * Keyboard
@@ -49,6 +49,14 @@ The old configurations still work on Catalina.
 * Security/Secure Boot Control: Disabled
 
 ##  Clover EFI bootloader
+* Latest version - 10.15.4 (19E266) requires Clover bootloader 5017 or above
+
+## Install
+* Create USB using createinstallmedia method
+* Install Clover Bootloader to USB
+* Copy VirtualSmc.efi, HFSPlus.efi, apfs.efi from [/drivers]
+(https://github.com/lehoa1806/Asus-Maximus-IX-CODE-CLOVER/tree/master/drivers)
+to /Clover/drivers/UEFI/
 
 ###  EFI/CLOVER/drivers/UEFI: 
 * HFSPlus.efi - useful in installing phase
@@ -61,12 +69,12 @@ Catalina
 ###  EFI/CLOVER/kexts/Other
 * AirportBrcmFixup.kext <- wifi
 * AppleALC.kext <- audio
+* ApplePS2SmartTouchPad.kext <- touchpad
 * BrcmBluetoothInjector.kext <- bluetooth
 * BrcmFirmwareData.kext <- bluetooth
 * BrcmPatchRAM3.kext <- bluetooth
-* SMCBatteryManager.kext <- battery indicator
-* VoodooPS2Controller.kext <- keyboard and touchpad
 * Lilu.kext
+* SMCBatteryManager.kext <- battery indicator
 * VirtualSMC.kext
 * WhateverGreen.kext
 

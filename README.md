@@ -54,8 +54,8 @@ The old configurations still work on Catalina.
 ## Install
 * Create USB using createinstallmedia method
 * Install Clover Bootloader to USB
-* Copy VirtualSmc.efi, HFSPlus.efi, apfs.efi from [/drivers]
-(https://github.com/lehoa1806/Asus-Maximus-IX-CODE-CLOVER/tree/master/drivers)
+* Copy VirtualSmc.efi, HFSPlus.efi, apfs.efi from
+[/drivers](https://github.com/lehoa1806/Asus-Maximus-IX-CODE-CLOVER/tree/master/drivers)
 to /Clover/drivers/UEFI/
 
 ###  EFI/CLOVER/drivers/UEFI: 

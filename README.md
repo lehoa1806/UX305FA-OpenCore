@@ -85,14 +85,6 @@ chmod +x GenSMBIOS.command
 ./GenSMBIOS.command
 # Choose one and copy to config.plist
 
-cd ~/workspace/HACKINTOSH/UX305FA/build/
-git clone https://github.com/corpnewt/CPUFriendFriend.git
-cd CPUFriendFriend
-chmod +x CPUFriendFriend.command
-./CPUFriendFriend.command
-# CPUFriendDataProvider.kext is generated in Results under CPUFriendFriend. Copy it to EFI/OC/Kexts/
-cp -rp Results/CPUFriendDataProvider.kext ~/workspace/HACKINTOSH/UX305FA/build/kexts/
-
 # DSDT.aml needs to be dumped from Windows or Linux before running the following steps
 cd ~/workspace/HACKINTOSH/UX305FA/build/
 git clone https://github.com/corpnewt/SSDTTime.git

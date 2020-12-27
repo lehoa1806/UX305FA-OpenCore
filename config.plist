@@ -1392,17 +1392,17 @@
 			<key>AdviseWindows</key>
 			<false/>
 			<key>MLB</key>
-			<string>#00000000000000000</string>
+			<string></string>
 			<key>ROM</key>
-			<data>#00000000000</data>
+			<data></data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemProductName</key>
 			<string>MacBookAir7,2</string>
 			<key>SystemSerialNumber</key>
-			<string>#000000000000</string>
+			<string></string>
 			<key>SystemUUID</key>
-			<string>#00000000-0000-0000-0000-000000000000</string>
+			<string></string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>

@@ -117,42 +117,42 @@ cp -R build/Release/Lilu.kext ./../kexts/
 # WhateverGreen
 cd ~/workspace/HACKINTOSH/UX305FA/build
 git clone https://github.com/acidanthera/WhateverGreen.git && cd WhateverGreen
-cp -R ./../MacKernelSDK ./../kexts/Lilu.kext
+cp -R ./../MacKernelSDK ./../Lilu.kext .
 xcodebuild
 cp -R build/Release/WhateverGreen.kext ./../kexts/
 
 # VirtualSMC
 cd ~/workspace/HACKINTOSH/UX305FA/build
 git clone https://github.com/acidanthera/VirtualSMC.git && cd VirtualSMC
-cp -R ./../MacKernelSDK ./../kexts/Lilu.kext .
+cp -R ./../MacKernelSDK ./../Lilu.kext .
 xcodebuild
 cp -R build/Release/VirtualSMC.kext build/Release/SMCBatteryManager.kext build/Release/SMCLightSensor.kext ./../kexts/
 
 # AppleALC
 cd ~/workspace/HACKINTOSH/UX305FA/build
 git clone https://github.com/acidanthera/AppleALC.git && cd AppleALC
-cp -R ./../MacKernelSDK ./../kexts/Lilu.kext .
+cp -R ./../MacKernelSDK ./../Lilu.kext .
 xcodebuild
 cp -R build/Release/AppleALC.kext ./../kexts/
 
 # BrcmPatchRAM3
 cd ~/workspace/HACKINTOSH/UX305FA/build
 git clone https://github.com/acidanthera/BrcmPatchRAM.git && cd BrcmPatchRAM
-cp -R ./../MacKernelSDK ./../kexts/Lilu.kext .
+cp -R ./../MacKernelSDK ./../Lilu.kext .
 xcodebuild
 cp -R build/Products/Release/BrcmBluetoothInjector.kext build/Products/Release/BrcmFirmwareData.kext build/Products/Release/BrcmPatchRAM3.kext ./../kexts/
 
 # AirportBrcmFixup
 cd ~/workspace/HACKINTOSH/UX305FA/build
 git clone https://github.com/acidanthera/AirportBrcmFixup.git && cd AirportBrcmFixup
-cp -R ./../MacKernelSDK ./../kexts/Lilu.kext .
+cp -R ./../MacKernelSDK ./../Lilu.kext .
 xcodebuild
 cp -R build/Release/AirportBrcmFixup.kext ./../kexts/
 
 # CPUFriend
 cd ~/workspace/HACKINTOSH/UX305FA/build
 git clone https://github.com/acidanthera/CPUFriend.git && cd CPUFriend
-cp -R ./../MacKernelSDK ./../kexts/Lilu.kext .
+cp -R ./../MacKernelSDK ./../Lilu.kext .
 xcodebuild
 cp -R build/Release/CPUFriend.kext ./../kexts/
 

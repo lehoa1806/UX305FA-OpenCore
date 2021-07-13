@@ -1,5 +1,5 @@
-# UX305FA - Big Sur
-Big Sur 11.1 on ASUS UX305FA
+# UX305FA - Monterey
+Monterey 12.0 on ASUS UX305FA
 
 ##  Hardware
 * ASUS ZenBook UX305FA
@@ -11,10 +11,14 @@ Big Sur 11.1 on ASUS UX305FA
 
 ##  Overview
 Updated to Big Sur 11.1
+Updated to Monterey 12.0
 
 Removed these following configurations since I don't use them at all.
 * Ambient light sensing
 * Keyboard: Function keys - Brightness 
+
+* Replace BrcmBluetoothInjector.kext with BlueToolFixup.kext since it stops working on 12.0
+* Build all kexts with latest codes
 
 ###  What works: (necessity order)
 * Keyboard
@@ -49,7 +53,7 @@ Removed these following configurations since I don't use them at all.
 ##  OpenCore
 * Latest version - 0.6.4
 * [Install Guide](https://dortania.github.io/OpenCore-Install-Guide/)
-* [Post-Instll Gude](https://dortania.github.io/OpenCore-Post-Install/)
+* [Post-Install Gude](https://dortania.github.io/OpenCore-Post-Install/)
 
 ## ACPI notes:
 SSDTs for UX305FA:
@@ -66,7 +70,7 @@ SSDTs for UX305FA:
 * Copy HFSPlus.efi from
 [/drivers](https://github.com/lehoa1806/Asus-Maximus-IX-CODE-CLOVER/tree/master/drivers)
 <p align="left">
-  <img src="https://raw.githubusercontent.com/lehoa1806/UX305FA-OpenCore/master/images/ux305fa-bigsur.efi.png">
+  <img src="https://raw.githubusercontent.com/lehoa1806/UX305FA-OpenCore/master/images/ux305fa-monterey.efi.png">
 </p>
 
 ## Prepare AML files and Kexts
@@ -140,7 +144,7 @@ cd ~/workspace/HACKINTOSH/UX305FA/build
 git clone https://github.com/acidanthera/BrcmPatchRAM.git && cd BrcmPatchRAM
 cp -R ./../MacKernelSDK ./../Lilu.kext .
 xcodebuild
-cp -R build/Products/Release/BrcmBluetoothInjector.kext build/Products/Release/BrcmFirmwareData.kext build/Products/Release/BrcmPatchRAM3.kext ./../kexts/
+cp -R build/Products/Release/BlueToolFixup.kext build/Products/Release/BrcmFirmwareData.kext build/Products/Release/BrcmPatchRAM3.kext ./../kexts/
 
 # AirportBrcmFixup
 cd ~/workspace/HACKINTOSH/UX305FA/build
@@ -164,6 +168,14 @@ chmod +x CPUFriendFriend.command
 # CPUFriendDataProvider.kext is generated in Results under CPUFriendFriend. Copy it to EFI/OC/Kexts/
 cp -rp Results/CPUFriendDataProvider.kext ./../kexts/
 ```
+## Monterey
+<p align="center">
+  <img src="https://raw.githubusercontent.com/lehoa1806/UX305FA-OpenCore/master/images/monterey.12.0.info.png.png">
+</p>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/lehoa1806/UX305FA-OpenCore/master/images/monterey.12.0.geekbench.png.png">
+</p>
+
 ## Big Sur
 <p align="center">
   <img src="https://raw.githubusercontent.com/lehoa1806/UX305FA-OpenCore/master/images/ux305fa-bigsur.info.png">

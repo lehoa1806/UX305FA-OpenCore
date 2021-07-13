@@ -10,8 +10,8 @@ Monterey 12.0 on ASUS UX305FA
 * BIOS version 213
 
 ##  Overview
-Updated to Big Sur 11.1
-Updated to Monterey 12.0
+* Updated to Big Sur 11.1
+* Updated to Monterey 12.0
 
 Removed these following configurations since I don't use them at all.
 * Ambient light sensing
@@ -170,7 +170,7 @@ cp -rp Results/CPUFriendDataProvider.kext ./../kexts/
 ```
 ## Monterey
 <p align="center">
-  <img src="https://raw.githubusercontent.com/lehoa1806/UX305FA-OpenCore/master/images/monterey.12.0.info.png.png">
+  <img src="https://raw.githubusercontent.com/lehoa1806/UX305FA-OpenCore/master/images/monterey.12.0.info.png">
 </p>
 <p align="center">
   <img src="https://raw.githubusercontent.com/lehoa1806/UX305FA-OpenCore/master/images/monterey.12.0.geekbench.png.png">
